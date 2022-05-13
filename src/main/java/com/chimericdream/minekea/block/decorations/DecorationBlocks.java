@@ -1,6 +1,7 @@
 package com.chimericdream.minekea.block.decorations;
 
 import com.chimericdream.minekea.ModInfo;
+import com.chimericdream.minekea.block.decorations.candles.GenericVotiveCandle;
 import com.chimericdream.minekea.block.decorations.jars.GlassJarBlock;
 import com.chimericdream.minekea.block.decorations.jars.GlassJarBlockEntity;
 import com.chimericdream.minekea.block.decorations.jars.GlassJarBlockEntityRenderer;
@@ -26,6 +27,8 @@ public class DecorationBlocks implements MinekeaBlockCategory {
     public static final FakeCake FAKE_CAKE;
     public static final GlassJarBlock GLASS_JAR;
 
+    public static final GenericVotiveCandle BLUE_VOTIVE_CANDLE;
+
     public static BlockEntityType<GlassJarBlockEntity> GLASS_JAR_BLOCK_ENTITY;
     public static BlockItem GLASS_JAR_ITEM;
 
@@ -33,6 +36,8 @@ public class DecorationBlocks implements MinekeaBlockCategory {
         ENDLESS_ROD = new EndlessRod();
         FAKE_CAKE = new FakeCake();
         GLASS_JAR = new GlassJarBlock();
+
+        BLUE_VOTIVE_CANDLE = new GenericVotiveCandle();
     }
 
     @Environment(EnvType.CLIENT)
@@ -49,6 +54,8 @@ public class DecorationBlocks implements MinekeaBlockCategory {
         ENDLESS_ROD.register();
         FAKE_CAKE.register();
         GLASS_JAR.register();
+
+        BLUE_VOTIVE_CANDLE.register();
     }
 
     @Override
