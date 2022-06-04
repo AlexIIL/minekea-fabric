@@ -143,17 +143,6 @@ public class GenericVerticalStairsBlock extends Block implements MinekeaBlock, W
     }
 
     @Override
-    public void validateMaterials(Map<String, Identifier> materials) {
-        String[] keys = new String[]{"main"};
-
-        for (String key : keys) {
-            if (!materials.containsKey(key)) {
-                throw new IllegalArgumentException(String.format("The materials must contain a '%s' key", key));
-            }
-        }
-    }
-
-    @Override
     public void setupResources() {
         MinekeaBlockSettings<?> settings = (MinekeaBlockSettings<?>) this.settings;
         MinekeaTags.addToolTag(settings.getTool(), getBlockID());

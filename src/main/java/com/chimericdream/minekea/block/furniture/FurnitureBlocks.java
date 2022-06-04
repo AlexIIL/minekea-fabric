@@ -1,6 +1,7 @@
 package com.chimericdream.minekea.block.furniture;
 
 import com.chimericdream.minekea.ModInfo;
+import com.chimericdream.minekea.block.furniture.armoires.Armoires;
 import com.chimericdream.minekea.block.furniture.bookshelves.Bookshelves;
 import com.chimericdream.minekea.block.furniture.bookshelves.StorageBookshelves;
 import com.chimericdream.minekea.block.furniture.displaycases.DisplayCases;
@@ -28,6 +29,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FurnitureBlocks implements MinekeaBlockCategory {
+    public static Armoires ARMOIRES = null;
     public static Bookshelves BOOKSHELVES = null;
     public static DisplayCases DISPLAY_CASES = null;
     public static Doors DOORS = null;
